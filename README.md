@@ -39,12 +39,17 @@
 
 ---
 
-超算思源一号中使用 LAMMPS 时的相关问题
+### 相关问题
 
-- 若没有得到结果，请先 `ll` 查看 `.err` 格式的文件大小是否为 0；若不为 0，则说明没有运行成功，出现报错；再查看 `.err` 或 `log.lammps` 文件里的具体内容来查找报错原因。
-- **LAMMPS 报错：LAMMPS 命令是一行一行执行的，哪行的命令有问题，它就会停在那，并给出错误信息，还是较容易看懂的；请先自己查看报错信息，并在 LAMMPS 官网上仔细阅读相应命令的手册，并尝试解决**；尝试多次后若无法解决，请将报错信息发给助教。
+#### 超算思源一号中使用 LAMMPS
+
+若没有得到结果，请先 `ll` 查看 `.err` 格式的文件大小是否为 0；若不为 0，则说明没有运行成功，出现报错；再查看 `.err` 或 `log.lammps` 文件里的具体内容来查找报错原因。
+
+**LAMMPS 报错：LAMMPS 命令是一行一行执行的，哪行的命令有问题，它就会停在那，并给出错误信息，还是较容易看懂的；请先自己查看报错信息，并在 LAMMPS 官网上仔细阅读相应命令的手册，并尝试解决**；尝试多次后若无法解决，请将报错信息发给助教。
 
 ---
+
+#### 势函数
 
 使用网络上的势函数（如 [NIST/MML Center for Theoretical and Computational Materials Science | NIST](https://www.ctcms.nist.gov/)），**请不要修改它的文件名及其后缀！！！其后缀是有特定含义的**，LAMMP 的 in 文件中的 `pair_style` 和 `pair_coeff` 参数也要进行相应的修改（这两个命令是相互绑定的），请阅读 [pair\_style command — LAMMPS documentation](https://docs.lammps.org/pair_style.html)；可通过以下命令把势函数文件直接下载到当前路径
 
@@ -54,7 +59,7 @@ curl -O potential_file_url
 # 示例
 curl -O https://www.ctcms.nist.gov/potentials/Download/2009--Zhakhovskii-V-V-Inogamov-N-A-Petrov-Y-V-et-al--Au/2/Au-2009.eam.alloy
 
-# 势函数写法
+# 势函数命令参数写法
 # eam 格式写法
 pair_style   eam
 pair_coeff   * * Cu_u6.eam
@@ -73,13 +78,15 @@ pair_coeff * * Au-2009.eam.alloy Au
 
 ### 相关问题
 
-- 直接运行 `atomsk` 出现报错
+#### atomsk
+
+直接运行 `atomsk` 出现报错
 
 ```bash
 atomsk: error while loading shared libraries: libiomp5.so: cannot open shared object file: No such file or directory
 ```
 
-原因：缺失动态链接库。编译 atomsk 过程中用到了 intel 相关库，使用前需 `module load`
+原因：缺失动态链接库。编译 atomsk 过程中用到了 intel 相关库，在思源一号使用前需 `module load`
 
 解决方法：执行以下命令
 
