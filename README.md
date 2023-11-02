@@ -2,7 +2,7 @@
 
 - 作者：小小角色
 - 创建时间：2023.11.02
-- 推荐在该 repo 中提问题 [Issues](https://gitee.com/yangsl306/MMMS-homework-questions/issues/new)
+- 推荐在该 repo 中进行提问 [Issues](https://gitee.com/yangsl306/MMMS-homework-questions/issues/new)；私信问助教也可以
 
 ---
 
@@ -46,7 +46,7 @@
 
 ---
 
-使用网络上的势函数（如 [NIST/MML Center for Theoretical and Computational Materials Science | NIST](https://www.ctcms.nist.gov/)），**请不要修改它的文件名及其后缀！！！其后缀是有特定含义的**，LAMMP 的 in 文件中的 `pair_style` 参数也要进行相应的修改，请阅读 [pair\_style command — LAMMPS documentation](https://docs.lammps.org/pair_style.html)；可通过以下命令把势函数文件直接下载到当前路径
+使用网络上的势函数（如 [NIST/MML Center for Theoretical and Computational Materials Science | NIST](https://www.ctcms.nist.gov/)），**请不要修改它的文件名及其后缀！！！其后缀是有特定含义的**，LAMMP 的 in 文件中的 `pair_style` 和 `pair_coeff` 参数也要进行相应的修改（这两个命令是相互绑定的），请阅读 [pair\_style command — LAMMPS documentation](https://docs.lammps.org/pair_style.html)；可通过以下命令把势函数文件直接下载到当前路径
 
 ```bash
 curl -O potential_file_url
