@@ -47,3 +47,21 @@
 ![Week07](assets/Week07.png)
 
 ---
+
+### 相关问题
+
+- 直接运行 `atomsk` 出现报错
+
+```bash
+atomsk: error while loading shared libraries: libiomp5.so: cannot open shared object file: No such file or directory
+```
+
+原因：缺失动态链接库。编译 atomsk 过程中用到了 intel 相关库，使用前需 `module load`
+
+解决方法：执行以下命令
+
+```bash
+module load intel/19.0.5
+```
+
+---
