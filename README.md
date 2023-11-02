@@ -1,5 +1,9 @@
 # 《多尺度材料模拟与计算》课程作业相关问题
 
+- 作者：小小角色
+- 创建时间：2023.11.02
+- 推荐在该 repo 中提问题 [Issues](https://gitee.com/yangsl306/MMMS-homework-questions/issues/new)
+
 ---
 
 ## 第一次作业
@@ -38,7 +42,26 @@
 超算思源一号中使用 LAMMPS 时的相关问题
 
 - 若没有得到结果，请先 `ll` 查看 `.err` 格式的文件大小是否为 0；若不为 0，则说明没有运行成功，出现报错；再查看 `.err` 或 `log.lammps` 文件里的具体内容来查找报错原因。
-- LAMMPS 报错：LAMMPS 命令是一行一行执行的，哪行有问题，它就会停在那，并给出错误信息，还是较容易看懂的；请先自己查看报错信息并尝试解决；尝试多次后若无法解决，请将报错信息发给助教。
+- **LAMMPS 报错：LAMMPS 命令是一行一行执行的，哪行的命令有问题，它就会停在那，并给出错误信息，还是较容易看懂的；请先自己查看报错信息，并在 LAMMPS 官网上仔细阅读相应命令的手册，并尝试解决**；尝试多次后若无法解决，请将报错信息发给助教。
+
+---
+
+使用网络上的势函数（如 [NIST/MML Center for Theoretical and Computational Materials Science | NIST](https://www.ctcms.nist.gov/)），**请不要修改它的文件名及其后缀！！！其后缀是有特定含义的**，LAMMP 的 in 文件中的 `pair_style` 参数也要进行相应的修改，请阅读 [pair\_style command — LAMMPS documentation](https://docs.lammps.org/pair_style.html)；可通过以下命令把势函数文件直接下载到当前路径
+
+```bash
+curl -O potential_file_url
+
+# 示例
+curl -O https://www.ctcms.nist.gov/potentials/Download/2009--Zhakhovskii-V-V-Inogamov-N-A-Petrov-Y-V-et-al--Au/2/Au-2009.eam.alloy
+
+# 势函数写法
+# eam 格式写法
+pair_style   eam
+pair_coeff   * * Cu_u6.eam
+# eam/alloy 写法
+pair_style eam/alloy
+pair_coeff * * Au-2009.eam.alloy Au
+```
 
 ---
 
