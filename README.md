@@ -1,6 +1,6 @@
 # 《多尺度材料模拟与计算》课程作业相关问题
 
-- 作者：小小角色
+- 作者：小小角色、走楼梯啊
 - 创建时间：2023.11.02
 - 推荐在该 repo 中进行提问 [Issues](https://gitee.com/yangsl306/MMMS-homework-questions/issues/new)；私信问助教也可以
 
@@ -47,6 +47,12 @@
 
 ---
 
+#### MobaXterm 使用
+
+部分同学笔记本安装的 MobaXterm 软件左侧文件目录会无法随右侧终端命令实时改变，建议使用 WinSCP 软件进行文件传输。
+
+---
+
 #### 超算思源一号中使用 LAMMPS
 
 若没有得到结果，请先 `ll` 查看 `.err` 格式的文件大小是否为 0；若不为 0，则说明没有运行成功，出现报错；再查看 `.err` 或 `log.lammps` 文件里的具体内容来查找报错原因。
@@ -76,6 +82,12 @@ pair_coeff * * Au-2009.eam.alloy Au
 
 ---
 
+#### OVITO
+
+OVITO 查看原子的位置信息：鼠标放到原子边上，窗口左下角会显示该原子的位置信息；构型图的下方有 `Particles` 选项，可以查看原子类型和原子的位置信息。
+
+---
+
 ## 第四次作业 - MD 大作业
 
 ![Week07](assets/Week07.png)
@@ -98,6 +110,19 @@ atomsk: error while loading shared libraries: libiomp5.so: cannot open shared ob
 
 ```bash
 module load intel/19.0.5
+```
+
+---
+
+#### 课程材料中的 tools
+
+如使 `eos_fit` 脚本在任意目录下直接运行（即 `eos_fit ev.dat 2 3`），请复制并执行以下命令：
+
+```bash
+cp ~/MSE6701H/MMMS/2-MolecularDynamics/0-tools/eos_fit ~/bin; source ~/.bashrc
+
+# or
+ln -s ~/MSE6701H/MMMS/2-MolecularDynamics/0-tools/eos_fit ~/bin; source ~/.bashrc
 ```
 
 ---
