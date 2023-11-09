@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# 从 Obsidian md 文档中更新 README.md 文档
+
+obsd_md_path="/mnt/d/obsidian-md"
+if [[ $HOSTNAME =~ "DESKTOP" ]]; then
+    obsd_md_path="/mnt/e/obsidian-md"
+fi
+
+obsd_readme=${obsd_md_path}/TA-related/MMMS-related/MMMS-homework-questions.md
+
+repo_path=$HOME/scripts/MMMS-homework-questions
+repo_readme=${repo_path}/README.md
+
+cp ${obsd_readme} ${repo_readme}
+
+
+update_num(){
+    cd ${repo_path}
+
+    update_md_num=$(git status --short --branch | grep "README.md" | wc -l)
+
+    if [[ $update_md_num -eq 0 ]]; then
+        echo -e "README.md file is latest.\n"
+    else
+        echo -e "README.md file is updated.\n"
+    fi
+
+    cd - > /dev/null 2>&1 
+}
+
+
+update_num
