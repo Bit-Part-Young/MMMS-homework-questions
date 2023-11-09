@@ -1,6 +1,6 @@
 # 《多尺度材料模拟与计算》课程作业相关问题
 
-- 作者：小小角色
+- 作者：小小角色、走楼梯啊
 - 创建时间：2023.11.02
 - 推荐在该 repo 中进行提问 [Issues](https://gitee.com/yangsl306/MMMS-homework-questions/issues/new)；私信问助教也可以
 
@@ -20,7 +20,7 @@
 
 >第 1 题中的第二小问，181° 对应的物理量是 $\theta$，不是 $\theta_0$
 >
-> $\theta_0$ 平衡角为 180°时，对应的体系为二氧化碳(CO2)
+>$\theta_0$ 平衡角为 180° 时，对应的体系为二氧化碳 (CO2)
 
 参考资料
 >Swope W C, Ferguson D M. Alternative expressions for energies and forces due to angle bending and torsional energy[J]. Journal of computational chemistry, 1992, 13(5): 585-594.
@@ -43,7 +43,13 @@
 
 #### 超算登录
 
-若登录出现 `Network error: Connection timed out`，有可能是之前多次密码输入错误导致临时被封，请过一段时间再尝试登录。若仍出现问题，请与助教联系。
+若登录出现 `Network error: Connection timed out` 或 `Connection refused`，有可能是之前多次密码输入错误导致临时被封，请过一段时间再尝试登录（也有可能是思源一号处于临时维修状态导致的无法登录，可查看超算相关通知或询问身边的同学是否可以登录）。若仍出现问题，请与助教联系。
+
+---
+
+#### MobaXterm 使用
+
+部分同学笔记本安装的 MobaXterm 软件左侧文件目录会无法随右侧终端命令实时改变，建议使用 WinSCP 软件进行文件传输。
 
 ---
 
@@ -76,6 +82,18 @@ pair_coeff * * Au-2009.eam.alloy Au
 
 ---
 
+#### dump 输出文件
+
+dump 输出文件含多帧数据，计算层间距的变化需考虑第一帧和最后一阵的构型数据
+
+---
+
+#### OVITO
+
+OVITO 查看原子的位置信息：鼠标放到原子边上，窗口左下角会显示该原子的位置信息；构型图的下方有 `Particles` 选项，可以查看原子类型和原子的位置信息。
+
+---
+
 ## 第四次作业 - MD 大作业
 
 ![Week07](assets/Week07.png)
@@ -98,6 +116,19 @@ atomsk: error while loading shared libraries: libiomp5.so: cannot open shared ob
 
 ```bash
 module load intel/19.0.5
+```
+
+---
+
+#### 课程材料中的 tools
+
+如使 `eos_fit` 脚本在任意目录下直接运行（即 `eos_fit ev.dat 2 3`），请复制并执行以下命令：
+
+```bash
+cp ~/MSE6701H/MMMS/2-MolecularDynamics/0-tools/eos_fit ~/bin; source ~/.bashrc
+
+# or
+ln -s ~/MSE6701H/MMMS/2-MolecularDynamics/0-tools/eos_fit ~/bin; source ~/.bashrc
 ```
 
 ---
