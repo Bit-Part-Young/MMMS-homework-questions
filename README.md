@@ -156,12 +156,12 @@ module load intel/19.0.5
 
 #### 课程材料中的 tools
 
-如使 `eos_fit` 脚本在任意目录下直接运行（即 `eos_fit ev.dat 2 3`），请复制并执行以下命令：
+若使 `eos_fit` 脚本在任意目录下直接运行（即 `eos_fit ev.dat 2 3`），请复制并执行以下命令：
 
 ```bash
 cp ~/MSE6701H/MMMS/2-MolecularDynamics/0-tools/eos_fit ~/bin; source ~/.bashrc
 
-# or
+# or 创建软链接
 ln -s ~/MSE6701H/MMMS/2-MolecularDynamics/0-tools/eos_fit ~/bin; source ~/.bashrc
 ```
 
