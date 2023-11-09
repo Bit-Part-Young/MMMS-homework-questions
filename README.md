@@ -20,7 +20,7 @@
 
 >第 1 题中的第二小问，181° 对应的物理量是 $\theta$，不是 $\theta_0$
 >
-> $\theta_0$ 平衡角为 180°时，对应的体系为二氧化碳(CO2)
+>$\theta_0$ 平衡角为 180° 时，对应的体系为二氧化碳 (CO2)
 
 参考资料
 >Swope W C, Ferguson D M. Alternative expressions for energies and forces due to angle bending and torsional energy[J]. Journal of computational chemistry, 1992, 13(5): 585-594.
