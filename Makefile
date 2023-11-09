@@ -1,4 +1,7 @@
 BRANCH=$(shell git branch --show-current)
 
-all: 
-	@git add .; git commit -m 'update'; git push origin $(BRANCH)
+all:
+	@./update_readme_md
+
+update:
+	@git add .; git commit -m 'update README.md'; git push origin $(BRANCH)
