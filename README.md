@@ -6,6 +6,13 @@
 
 ---
 
+相关教程链接：
+- WSL 安装与使用：[WSL 安装与使用 | Seek Another Land](https://seekanotherland.xyz/hexo-demo/posts/11367.html)
+- Linux 相关教程：[LINUX-TUTORIAL](https://dunwu.github.io/linux-tutorial/)
+- LAMMPS 相关教程：[LAMMPS教程汇总 - lammps 加油站](https://mp.weixin.qq.com/s/fDKW__3D0dsY9aeJHQ-NMw)
+
+---
+
 ## 第一次作业
 
 ![Week03](assets/Week03.png)
