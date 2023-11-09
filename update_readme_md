@@ -21,9 +21,9 @@ update_num(){
     update_md_num=$(git status --short --branch | grep "README.md" | wc -l)
 
     if [[ $update_md_num -eq 0 ]]; then
-        echo -e "README.md file is latest.\n"
+        echo -e "\nREADME.md file is latest."
     else
-        echo -e "README.md file is updated.\n"
+        echo -e "\nREADME.md file is updated."
     fi
 
     cd - > /dev/null 2>&1 
