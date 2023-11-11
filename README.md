@@ -6,7 +6,11 @@
 
 ---
 
-相关教程链接：
+**请各位同学多熟悉 Linux 的基本命令并理解其含义，不建议直接运行命令！！！很多同学问的问题都源于此！**
+
+---
+
+**相关教程链接**：
 - WSL 安装与使用：[WSL 安装与使用 | Seek Another Land](https://seekanotherland.xyz/hexo-demo/posts/11367.html)
 - Linux 相关教程：[LINUX-TUTORIAL](https://dunwu.github.io/linux-tutorial/)
 - LAMMPS 相关教程：[LAMMPS教程汇总 - lammps 加油站](https://mp.weixin.qq.com/s/fDKW__3D0dsY9aeJHQ-NMw)
@@ -62,7 +66,7 @@
 
 #### 超算思源一号中使用 LAMMPS
 
-- 若没有得到结果，请先 `ll` 查看 `.err` 格式的文件大小是否为 0；若不为 0，则说明没有运行成功，出现报错；再查看 `.err` 或 `log.lammps` 文件里的具体内容来查找报错原因。
+- **若没有得到结果，请先 `ll` 查看 `.err` 格式的文件大小是否为 0；若不为 0，则说明没有运行成功，出现报错；再查看 `.err` 或 `log.lammps` 文件里的具体内容来查找报错原因**。
 
 - **LAMMPS 报错：LAMMPS 命令是一行一行执行的，哪行的命令有问题，它就会停在那，并给出错误信息，还是较容易看懂的；请先自己查看报错信息，并在 LAMMPS 官网上仔细阅读相应命令的手册，并尝试解决**；尝试多次后若无法解决，请将报错信息发给助教。
 
@@ -70,9 +74,9 @@
 
 #### VSCode
 
-- vscode 可以远程连接超算。
+- VSCode 可以远程连接超算。
 
-- vscode 的 python 扩展在超算上使用时容易崩溃；建议在本地端编写 python 脚本以获得最佳体验；或在设置中把 python 插件中的 language server 选项 由 default 或 Pylance 改成 jedi，崩溃情况会有所改善。
+- VSCode 的 python 扩展在超算上使用时容易崩溃；建议在本地端编写 python 脚本以获得最佳体验；或在设置中把 python 插件中的 language server 选项 由 default 或 Pylance 改成 jedi，崩溃情况会有所改善。
 
 ---
 
@@ -96,7 +100,7 @@ lattice      fcc 4.089 origin 0.0 0.0 0.0 orient x ... y ... z ...
 
 使用网络上的势函数（如 [NIST/MML Center for Theoretical and Computational Materials Science | NIST](https://www.ctcms.nist.gov/)），**请不要修改它的文件名及其后缀！！！其后缀是有特定含义的**，LAMMPS in 文件中的 `pair_style` 和 `pair_coeff` 参数也要进行相应的修改（这两个命令是相互绑定的），请阅读 [pair\_style command — LAMMPS documentation](https://docs.lammps.org/pair_style.html)。
 
-可通过以下命令把势函数文件直接下载到当前路径
+可通过以下命令把势函数文件直接下载到当前路径：
 
 ```bash
 curl -O potential_file_url
@@ -105,7 +109,7 @@ curl -O potential_file_url
 curl -O https://www.ctcms.nist.gov/potentials/Download/2009--Zhakhovskii-V-V-Inogamov-N-A-Petrov-Y-V-et-al--Au/2/Au-2009.eam.alloy
 ```
 
-势函数命令参数写法
+势函数命令参数写法：
 
 ```bash
 # eam 格式写法
@@ -131,7 +135,7 @@ OVITO 查看原子的位置信息：鼠标放到原子边上，窗口左下角�
 
 - 层间距计算的一种简易方式：表面模型中的中间几层的层间距是基本不会变的（可以先计算进行检验），以其为 $d_{0}$，作为参考值。
 
-- 对于 FCC 晶体，(111) 的表面能应最小。
+- **对于 FCC 晶体，(111) 的表面能应最小**。
 
 ---
 
@@ -145,15 +149,15 @@ OVITO 查看原子的位置信息：鼠标放到原子边上，窗口左下角�
 
 #### atomsk
 
-直接运行 `atomsk` 出现报错
+直接运行 `atomsk` 出现以下报错：
 
 ```bash
 atomsk: error while loading shared libraries: libiomp5.so: cannot open shared object file: No such file or directory
 ```
 
-原因：缺失动态链接库。编译 atomsk 过程中用到了 intel 相关库，在思源一号使用前需 `module load`
+原因：缺失动态链接库。编译 atomsk 过程中用到了 intel 相关库，在思源一号使用前需 `module load`。
 
-解决方法：执行以下命令
+解决方法：执行以下命令：
 
 ```bash
 module load intel/19.0.5
@@ -172,4 +176,10 @@ cp ~/MSE6701H/MMMS/2-MolecularDynamics/0-tools/eos_fit ~/bin; source ~/.bashrc
 ln -s ~/MSE6701H/MMMS/2-MolecularDynamics/0-tools/eos_fit ~/bin; source ~/.bashrc
 ```
 
+>最新的课程材料的 tools 中的脚本（MD 和 DFT 部分）所在路径均已添加到 PATH 中，可不用运行上述命令。
+
 ---
+
+## 第五次作业
+
+![Week09](assets/Week09.png)
