@@ -14,6 +14,7 @@
 - WSL 安装与使用：[WSL 安装与使用 | Seek Another Land](https://seekanotherland.xyz/hexo-demo/posts/11367.html)
 - Linux 相关教程：[LINUX-TUTORIAL](https://dunwu.github.io/linux-tutorial/)
 - Git 相关教程：[Git 使用 | Seek Another Land](https://seekanotherland.xyz/hexo-demo/posts/24234.html)
+- Miniconda 相关教程：[Miniconda3 安装与使用 | Seek Another Land](https://seekanotherland.xyz/hexo-demo/posts/43711.html)
 - LAMMPS 相关教程：[LAMMPS教程汇总 - lammps 加油站](https://mp.weixin.qq.com/s/fDKW__3D0dsY9aeJHQ-NMw)
 - atomsk 结构建模官方教程：[ATOMSK Tutorials](https://atomsk.univ-lille.fr/tutorials.php)
 
