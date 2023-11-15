@@ -186,3 +186,11 @@ ln -s ~/MSE6701H/MMMS/2-MolecularDynamics/0-tools/eos_fit ~/bin; source ~/.bashr
 ## 第五次作业
 
 ![Week09](assets/Week09.png)
+
+---
+
+## 第六次作业
+
+![Week10](assets/Week10.png)
+
+画出二维三角晶格的 Wigner-Seitz 原胞和第一布里渊区
