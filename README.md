@@ -193,4 +193,18 @@ ln -s ~/MSE6701H/MMMS/2-MolecularDynamics/0-tools/eos_fit ~/bin; source ~/.bashr
 
 ![Week10](assets/Week10.png)
 
+
+
 画出二维三角晶格的 Wigner-Seitz 原胞和第一布里渊区
+
+---
+
+## 第七次作业 - DFT 大作业
+
+### 相关问题
+
+#### VASP 控温
+
+VASP 的控温目前还是针对整个计算体系，所以没办法设置温度梯度；可以 MD，但控温、控压不能够像 LAMMPS 那样可以针对部分原子来设置
+
+>[NpT ensemble - Vaspwiki](https://www.vasp.at/wiki/index.php/NpT_ensemble)
