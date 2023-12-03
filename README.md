@@ -201,6 +201,12 @@ ln -s ~/MSE6701H/MMMS/2-MolecularDynamics/0-tools/eos_fit ~/bin; source ~/.bashr
 
 ## 第七次作业 - DFT 大作业
 
+![Week12-1](assets/Week12-1.png)
+
+![Week12-2](assets/Week12-2.png)
+
+---
+
 ### 相关问题
 
 #### VASP 控温
