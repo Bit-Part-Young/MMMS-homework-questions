@@ -11,12 +11,26 @@
 ---
 
 **相关教程链接**：
-- WSL 安装与使用：[WSL 安装与使用 | Seek Another Land](https://seekanotherland.xyz/hexo-demo/posts/11367.html)
+- 《多尺度材料模拟与计算》课程 MD、DFT 部分实验材料：[Course Materials for MSE6701H Multiscale Materials Modelling and Simulation.](https://gitee.com/yangsl306/MMMS)
+- WSL 安装与使用：[WSL 安装与使用 - Wiki of NES Lab](https://seekanotherland.xyz/mkdocs-demo/linux/wsl-usage)
 - Linux 相关教程：[LINUX-TUTORIAL](https://dunwu.github.io/linux-tutorial/)
-- Git 相关教程：[Git 使用 | Seek Another Land](https://seekanotherland.xyz/hexo-demo/posts/24234.html)
-- Miniconda 相关教程：[Miniconda3 安装与使用 | Seek Another Land](https://seekanotherland.xyz/hexo-demo/posts/43711.html)
+- Git 相关教程：[Git 使用 - Wiki of NES Lab](https://seekanotherland.xyz/mkdocs-demo/programming/git)
+- Miniconda3 使用教程：[Miniconda3 安装与使用 - Wiki of NES Lab](https://seekanotherland.xyz/mkdocs-demo/programming/python/miniconda3-usage)
+- LAMMPS Documentation：[LAMMPS documentation](https://docs.lammps.org/Manual.html)
 - LAMMPS 相关教程：[LAMMPS教程汇总 - lammps 加油站](https://mp.weixin.qq.com/s/fDKW__3D0dsY9aeJHQ-NMw)
-- atomsk 结构建模官方教程：[ATOMSK Tutorials](https://atomsk.univ-lille.fr/tutorials.php)
+- VASP INCAR 参数：[Category:INCAR tag - Vaspwiki](https://www.vasp.at/wiki/index.php/Category:INCAR_tag)
+- VASP POSCAR：[POSCAR - Vaspwiki](https://www.vasp.at/wiki/index.php/POSCAR)
+- VASP KPOINTS：[KPOINTS - Vaspwiki](https://www.vasp.at/wiki/index.php/KPOINTS)
+- VASP 赝势推荐：[Available PAW potentials - Vaspwiki](https://www.vasp.at/wiki/index.php/Available_PAW_potentials#Recommended_potentials_for_DFT_calculations)
+- VASPKIT Features: [Features — VASPKIT 1.4 documentation](https://vaspkit.com/features.html)
+- 模型构建相关开源程序
+	- [Atomsk](https://atomsk.univ-lille.fr/)
+	- [pymatgen](https://pymatgen.org/)
+	- [ASE](https://wiki.fysik.dtu.dk/ase/)
+	- [latgen](https://github.com/lingtikong/latgen)
+	- [PyXtal](https://pyxtal.readthedocs.io/en/latest/)
+	- …
+
 
 ---
 
