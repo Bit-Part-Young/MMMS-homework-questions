@@ -309,6 +309,15 @@ RMM:  15    -0.249272312495E+02    0.64653E-04   -0.12583E-04  1440   0.116E-01 
 
 ---
 
+#### WinSCP
+
+WinSCP 直接双击打开图片会出现如下错误，正确打开方式：右键 - Open。
+
+![winscp](assets/questions-imgs/winscp.png)
+
+
+---
+
 ## 第八次作业
 
 ![Week14](assets/Week14.png)
