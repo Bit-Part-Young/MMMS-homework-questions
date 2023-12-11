@@ -15,6 +15,17 @@ repo_readme=${repo_path}/README.md
 cp ${obsd_readme} ${repo_readme}
 
 
+git_update(){
+    BRANCH=$(git branch --show-current)
+    git status --short --branch
+    echo
+    git add ${readme_fn}
+    git commit -m "update ${readme_fn}"
+    echo
+    # git push origin ${BRANCH}
+}
+
+
 update_num(){
     cd ${repo_path}
 
@@ -24,6 +35,7 @@ update_num(){
         echo -e "\nREADME.md file is latest."
     else
         echo -e "\nREADME.md file is updated."
+        git_update
     fi
 
     cd - > /dev/null 2>&1 
