@@ -214,3 +214,81 @@ ln -s ~/MSE6701H/MMMS/2-MolecularDynamics/0-tools/eos_fit ~/bin; source ~/.bashr
 VASP 的控温目前还是针对整个计算体系，所以没办法设置温度梯度；可以 MD，但控温、控压不能够像 LAMMPS 那样可以针对部分原子来设置
 
 >[NpT ensemble - Vaspwiki](https://www.vasp.at/wiki/index.php/NpT_ensemble)
+
+---
+
+#### 能带结构相关
+
+- 对能带结构的观察，可以通过多种方式。一种是观察各能级对应的能量随第一布里渊区中一些高对称性点之间连线上 k 点的变化，称之为色散关系 dispersion relation；一种是观察不同能级下可能状态数量的分布，即态密度 electron density of states。费米能级之下的能级，称为价带，即价电子填充的能带；费米能级之上的，称为导带，有电子进入导带则可在势场驱动下迁移，即导电。
+
+- 内层电子的能级都是一个个分立的能级，没有带；外层电子的能级交叠在一起，形成带
+
+- 算例中对氢原子、氢分子的计算，都是非周期性体系，价电子也没有带，只有能级
+
+---
+
+#### POSCAR 文件错误
+
+对构型中的部分原子进行固定处理时，POSCAR 文件的第 8 行（Selective Dynamics）和第 9 行（Direct 或 Cartesian）写反，导致出现以下错误：
+
+`*.err*` 文件内容
+```txt
+forrtl: severe (24): end-of-file during read, unit 15, file path/POSCAR
+Image              PC                Routine            Line        Source
+vasp_std           00000000015B4558  Unknown               Unknown  Unknown
+vasp_std           00000000015EA5C2  Unknown               Unknown  Unknown
+vasp_std           000000000047B107  Unknown               Unknown  Unknown
+vasp_std           00000000013F10EA  Unknown               Unknown  Unknown
+vasp_std           000000000040B462  Unknown               Unknown  Unknown
+libc-2.28.so       0000150B60278CA3  __libc_start_main     Unknown  Unknown
+vasp_std           000000000040B36E  Unknown               Unknown  Unknown
+
+```
+
+`*.out` 文件内容
+```txt
+ running on    1 total cores
+ distrk:  each k-point on    1 cores,    1 groups
+ distr:  one band on    1 cores,    1 groups
+ using from now: INCAR
+ vasp.5.4.4.18Apr17-6-g9f103f2a35 (build Oct 18 2022 14:02:43) complex
+
+ POSCAR found type information on POSCAR  Al
+ POSCAR found :  1 types and       7 ions
+ scaLAPACK will be used
+  No initial positions read in
+```
+
+正常输出
+```txt
+ running on    4 total cores
+ distrk:  each k-point on    4 cores,    1 groups
+ distr:  one band on    2 cores,    2 groups
+ using from now: INCAR
+ vasp.5.4.4.18Apr17-6-g9f103f2a35 (build Oct 18 2022 14:02:43) complex
+
+ POSCAR found type information on POSCAR  Cu
+ POSCAR found :  1 types and       7 ions
+ scaLAPACK will be used
+ LDA part: xc-table for Pade appr. of Perdew
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ FFT: planning ...
+ WAVECAR not read
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1     0.595624407758E+03    0.59562E+03   -0.24878E+04  1380   0.160E+03
+DAV:   2     0.314946814365E+02   -0.56413E+03   -0.54893E+03  1380   0.382E+02
+DAV:   3    -0.286988203321E+02   -0.60194E+02   -0.56033E+02  1452   0.173E+02
+DAV:   4    -0.305993666502E+02   -0.19005E+01   -0.18873E+01  1522   0.394E+01
+DAV:   5    -0.306496747790E+02   -0.50308E-01   -0.50309E-01  1542   0.508E+00    0.192E+01
+RMM:   6    -0.275355157296E+02    0.31142E+01   -0.69924E+01  1452   0.952E+01    0.105E+01
+RMM:   7    -0.250166707747E+02    0.25188E+01   -0.11794E+01  1440   0.429E+01    0.167E+00
+RMM:   8    -0.250006801850E+02    0.15991E-01   -0.28649E-01  1466   0.475E+00    0.154E+00
+RMM:   9    -0.249377065000E+02    0.62974E-01   -0.75865E-02  1458   0.292E+00    0.606E-01
+RMM:  10    -0.249284911136E+02    0.92154E-02   -0.13633E-02  1512   0.771E-01    0.172E-01
+RMM:  11    -0.249277823542E+02    0.70876E-03   -0.44748E-03  1450   0.561E-01    0.128E-01
+RMM:  12    -0.249274765037E+02    0.30585E-03   -0.64315E-04  1522   0.216E-01    0.728E-02
+RMM:  13    -0.249273898265E+02    0.86677E-04   -0.17221E-04  1482   0.129E-01    0.469E-02
+RMM:  14    -0.249272959026E+02    0.93924E-04   -0.34337E-04  1455   0.170E-01    0.366E-02
+RMM:  15    -0.249272312495E+02    0.64653E-04   -0.12583E-04  1440   0.116E-01    0.122E-02
+```
