@@ -2,6 +2,10 @@
 
 # 从 Obsidian md 文档中更新 README.md 文档
 
+readme_fn=README.md
+repo_path=$HOME/scripts/MMMS-homework-questions
+readme_path=${repo_path}/${readme_fn}
+
 obsd_md_path="/mnt/d/obsidian-md"
 if [[ $HOSTNAME =~ "DESKTOP" ]]; then
     obsd_md_path="/mnt/e/obsidian-md"
@@ -9,10 +13,7 @@ fi
 
 obsd_readme=${obsd_md_path}/TA-related/MMMS-related/MMMS-homework-questions.md
 
-repo_path=$HOME/scripts/MMMS-homework-questions
-repo_readme=${repo_path}/README.md
-
-cp ${obsd_readme} ${repo_readme}
+cp ${obsd_readme} ${readme_path}
 
 
 git_update(){
