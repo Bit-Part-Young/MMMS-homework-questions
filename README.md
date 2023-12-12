@@ -2,7 +2,8 @@
 
 - 作者：小小角色、走楼梯啊
 - 创建时间：2023.11.02
-- 推荐在该 repo 中进行提问 [Issues](https://gitee.com/yangsl306/MMMS-homework-questions/issues/new)；私信问助教也可以
+- 网页版：[《多尺度材料模拟与计算》课程作业相关问题](https://seekanotherland.xyz/MMMS-homework-questions/)
+- 推荐在该 repo 中进行提问[Issues - Github](https://github.com/Bit-Part-Young/MMMS-homework-questions/issues/new) / [Issues - Gitee](https://gitee.com/yangsl306/MMMS-homework-questions/issues/new)；私信问助教也可以
 
 ---
 
