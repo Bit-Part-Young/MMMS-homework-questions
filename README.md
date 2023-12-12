@@ -36,7 +36,8 @@
 
 ## 第一次作业
 
-![Week03](assets/Week03.png)
+<!-- ![Week03](assets/Week03.png) -->
+![Week03-2023-12-12](https://cdn.jsdelivr.net/gh/Bit-Part-Young/BTY-imgs/lenovo-images/Week03-2023-12-12.png)
 
 ---
 
@@ -44,7 +45,8 @@
 
 - 第 1 题
 
-![Week05-1](assets/Week05-1.png)
+<!-- ![Week05-1](assets/Week05-1.png) -->
+![Week05-1-2023-12-12](https://cdn.jsdelivr.net/gh/Bit-Part-Young/BTY-imgs/lenovo-images/Week05-1-2023-12-12.png)
 
 第 1 题中的第二小问，181° 对应的物理量是 $\theta$，不是 $\theta_0$
 
@@ -57,13 +59,15 @@
 
 - 第 2 题
 
-![Week05-2](assets/Week05-2.png)
+<!-- ![Week05-2](assets/Week05-2.png) -->
+![Week05-2-2023-12-12](https://cdn.jsdelivr.net/gh/Bit-Part-Young/BTY-imgs/lenovo-images/Week05-2-2023-12-12.png)
 
 ---
 
 ## 第三次作业
 
-![Week06](assets/Week06.png)
+<!-- ![Week06](assets/Week06.png) -->
+![Week06-2023-12-12](https://cdn.jsdelivr.net/gh/Bit-Part-Young/BTY-imgs/lenovo-images/Week06-2023-12-12.png)
 
 ---
 
@@ -158,7 +162,8 @@ OVITO 查看原子的位置信息：鼠标放到原子边上，窗口左下角�
 
 ## 第四次作业 - MD 大作业
 
-![Week07](assets/Week07.png)
+<!-- ![Week07](assets/Week07.png) -->
+![Week07-2023-12-12](https://cdn.jsdelivr.net/gh/Bit-Part-Young/BTY-imgs/lenovo-images/Week07-2023-12-12.png)
 
 ---
 
@@ -199,15 +204,15 @@ ln -s ~/MSE6701H/MMMS/2-MolecularDynamics/0-tools/eos_fit ~/bin; source ~/.bashr
 
 ## 第五次作业
 
-![Week09](assets/Week09.png)
+<!-- ![Week09](assets/Week09.png) -->
+![Week09-2023-12-12](https://cdn.jsdelivr.net/gh/Bit-Part-Young/BTY-imgs/lenovo-images/Week09-2023-12-12.png)
 
 ---
 
 ## 第六次作业
 
-![Week10](assets/Week10.png)
-
-
+<!-- ![Week10](assets/Week10.png) -->
+![Week10-2023-12-12](https://cdn.jsdelivr.net/gh/Bit-Part-Young/BTY-imgs/lenovo-images/Week10-2023-12-12.png)
 
 画出二维三角晶格的 Wigner-Seitz 原胞和第一布里渊区
 
@@ -215,9 +220,11 @@ ln -s ~/MSE6701H/MMMS/2-MolecularDynamics/0-tools/eos_fit ~/bin; source ~/.bashr
 
 ## 第七次作业 - DFT 大作业
 
-![Week12-1](assets/Week12-1.png)
+<!-- ![Week12-1](assets/Week12-1.png) -->
+![Week12-1-2023-12-12](https://cdn.jsdelivr.net/gh/Bit-Part-Young/BTY-imgs/lenovo-images/Week12-1-2023-12-12.png)
 
-![Week12-2](assets/Week12-2.png)
+<!-- ![Week12-2](assets/Week12-2.png) -->
+![Week12-2-2023-12-12](https://cdn.jsdelivr.net/gh/Bit-Part-Young/BTY-imgs/lenovo-images/Week12-2-2023-12-12.png)
 
 ---
 
@@ -311,13 +318,14 @@ RMM:  15    -0.249272312495E+02    0.64653E-04   -0.12583E-04  1440   0.116E-01 
 
 #### WinSCP
 
-WinSCP 直接双击打开图片会出现如下错误，正确打开方式：右键 - Open。
+WinSCP 直接双击打开图片会出现如下错误，正确打开方式：**右键 - Open**。
 
-![winscp](assets/questions-imgs/winscp.png)
-
+<!-- ![winscp](assets/questions-imgs/winscp.png) -->
+![winscp-2023-12-12](https://cdn.jsdelivr.net/gh/Bit-Part-Young/BTY-imgs/lenovo-images/winscp-2023-12-12.png)
 
 ---
 
 ## 第八次作业
 
-![Week14](assets/Week14.png)
+<!-- ![Week14](assets/Week14.png) -->
+![Week14-2023-12-12](https://cdn.jsdelivr.net/gh/Bit-Part-Young/BTY-imgs/lenovo-images/Week14-2023-12-12.png)
