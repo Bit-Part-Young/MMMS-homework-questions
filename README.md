@@ -11,7 +11,8 @@
 ---
 
 **相关教程链接**：
-- 《多尺度材料模拟与计算》课程 MD、DFT 部分实验材料：[Course Materials for MSE6701H Multiscale Materials Modelling and Simulation.](https://gitee.com/yangsl306/MMMS)
+
+- 《多尺度材料模拟与计算》课程 MD、DFT 部分实验材料：[Course Materials for MSE6701H Multiscale Materials Modelling and Simulation](https://gitee.com/yangsl306/MMMS)
 - WSL 安装与使用：[WSL 安装与使用 - Wiki of NES Lab](https://seekanotherland.xyz/mkdocs-demo/linux/wsl-usage)
 - Linux 相关教程：[LINUX-TUTORIAL](https://dunwu.github.io/linux-tutorial/)
 - Git 相关教程：[Git 使用 - Wiki of NES Lab](https://seekanotherland.xyz/mkdocs-demo/programming/git)
@@ -129,7 +130,7 @@ curl -O https://www.ctcms.nist.gov/potentials/Download/2009--Zhakhovskii-V-V-Ino
 势函数命令参数写法：
 
 ```bash
-# eam 格式写法
+# eam 写法
 pair_style   eam
 pair_coeff   * * Cu_u6.eam
 
