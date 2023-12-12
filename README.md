@@ -32,7 +32,6 @@
 	- [PyXtal](https://pyxtal.readthedocs.io/en/latest/)
 	- …
 
-
 ---
 
 ## 第一次作业
