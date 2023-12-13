@@ -1,5 +1,7 @@
 # 《多尺度材料模拟与计算》课程作业相关问题
 
+[![CI Status](https://github.com/Bit-Part-Young/MMMS-homework-questions/actions/workflows/mkdocs-deploy.yml/badge.svg)](https://github.com/Bit-Part-Young/MMMS-homework-questions/actions/workflows/mkdocs-deploy.yml)
+
 - 作者：小小角色、走楼梯啊
 - 创建时间：2023.11.02
 - 网页版：[《多尺度材料模拟与计算》课程作业相关问题](https://seekanotherland.xyz/MMMS-homework-questions/)
