@@ -1,5 +1,9 @@
 site_name: MMMS homework questions
 site_description: MMMS homework questions
+site_url: https://seekanotherland.xyz/MMMS-homework-questions/
+repo_name: Bit-Part-Young/MMMS-homework-questions
+repo_url: https://github.com/Bit-Part-Young/MMMS-homework-questions/
+edit_uri: tree/main/docs  # 每个文档的顶部显示一个编辑按钮，"" 则隐藏
 copyright: Copyright &copy 2023-2023
 
 
@@ -39,9 +43,9 @@ extra:
     - name: GitHub
       icon: fontawesome/brands/github
       link: https://github.com/Bit-Part-Young
-    # - name: Home
-    #   icon: fontawesome/solid/house-chimney
-    #   link: https://seekanotherland.xyz/mkdocs-demo/
+    - name: Home
+      icon: fontawesome/solid/house-chimney
+      link: https://seekanotherland.xyz/MMMS-homework-questions/
 
 
 # Extensions
