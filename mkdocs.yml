@@ -13,7 +13,13 @@ theme:
   icon: 
     logo: material/notebook-outline
   features:
+    - content.tooltips
+    # 每个文档的顶部显示编辑和查看源码按钮
+    - content.action.edit
+    - content.action.view
     - content.code.annotate
+    - content.code.copy
+    - content.code.select
     - navigation.tracking
     - navigation.tabs
     - navigation.indexes
