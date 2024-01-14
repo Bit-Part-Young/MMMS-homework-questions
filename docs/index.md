@@ -1,11 +1,9 @@
 # 《多尺度材料模拟与计算》课程作业相关问题
 
-[![CI Status](https://github.com/Bit-Part-Young/MMMS-homework-questions/actions/workflows/mkdocs-deploy.yml/badge.svg)](https://github.com/Bit-Part-Young/MMMS-homework-questions/actions/workflows/mkdocs-deploy.yml)
-
 - 作者：小小角色、走楼梯啊
 - 创建时间：2023.11.02
 - 网页版：[《多尺度材料模拟与计算》课程作业相关问题](https://seekanotherland.xyz/MMMS-homework-questions/)
-- 推荐在该 repo 中进行提问[Issues - Github](https://github.com/Bit-Part-Young/MMMS-homework-questions/issues/new) / [Issues - Gitee](https://gitee.com/yangsl306/MMMS-homework-questions/issues/new)；私信问助教也可以
+- 推荐在该 repo 中进行提问 [Issues - Github](https://github.com/Bit-Part-Young/MMMS-homework-questions/issues/new) / [Issues - Gitee](https://gitee.com/yangsl306/MMMS-homework-questions/issues/new)；私信问助教也可以
 
 ---
 
@@ -332,3 +330,21 @@ WinSCP 直接双击打开图片会出现如下错误，正确打开方式：**�
 
 ![Week14](assets/Week14.png)
 <!-- ![Week14-2023-12-12](https://cdn.jsdelivr.net/gh/Bit-Part-Young/BTY-imgs/lenovo-images/Week14-2023-12-12.png) -->
+
+---
+
+## 第九次作业
+
+![Week14](assets/Homework09.png)
+
+---
+
+## 第十次作业
+
+![Week14](assets/Homework10.png)
+
+---
+
+## 第十一次作业 - PF 大作业
+
+![Week14](assets/Homework11.png)
