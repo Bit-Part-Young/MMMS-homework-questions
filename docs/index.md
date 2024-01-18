@@ -215,7 +215,17 @@ ln -s ~/MSE6701H/MMMS/2-MolecularDynamics/0-tools/eos_fit ~/bin; source ~/.bashr
 ![Week10](assets/Week10.png)
 <!-- ![Week10-2023-12-12](https://cdn.jsdelivr.net/gh/Bit-Part-Young/BTY-imgs/lenovo-images/Week10-2023-12-12.png) -->
 
-画出二维三角晶格的 Wigner-Seitz 原胞和第一布里渊区
+绘制二维三角晶格的 Wigner-Seitz 原胞和第一布里渊区
+
+
+问题：
+
+- 绘制两个图
+- 晶格基矢应给出，其倒易点阵基矢应计算出
+- 晶格基矢与倒易点阵基矢之间的角度和大小比例应区表现出来
+
+
+
 
 ---
 
@@ -226,6 +236,19 @@ ln -s ~/MSE6701H/MMMS/2-MolecularDynamics/0-tools/eos_fit ~/bin; source ~/.bashr
 
 ![Week12-2](assets/Week12-2.png)
 <!-- ![Week12-2-2023-12-12](https://cdn.jsdelivr.net/gh/Bit-Part-Young/BTY-imgs/lenovo-images/Week12-2-2023-12-12.png) -->
+
+
+问题：
+
+- 这是一个实验报告，框架及内容需完整（实验目的、原理、方法、结果与分析及结论）
+- 收敛性测试最终的 k-mesh 和 encut 应给出，这是后续计算的基础
+- 需要采用不同的 ISMSEAR 值，只计算了一种 ISMSEAR 值的情况，计算内容不完整
+- 对于表面和空位模型，需要给出其计算的构型可视化图，不然不知道你算在算什么
+- 计算出来的表面能和空位形成能数据要知道其含义，不可能为负值（负值表示该构型更稳定），，且要与文献中的实验值、DFT、MD 计算值进行对比，明显不对的需要检查并重新计算，直至数值合理，不是仅仅得到一个数值就可以了
+- 没有找文献；建议最后所有的计算数据汇总成一个表格，结果及对比更明晰
+- 可以不用计算能带
+- 实验材料中的相关脚本内容不需要放到报告中
+
 
 ---
 
