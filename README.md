@@ -42,6 +42,10 @@
 
 ---
 
+### 作业批改问题
+
+---
+
 ## 第二次作业
 
 - 第 1 题
@@ -65,6 +69,10 @@
 
 ---
 
+### 作业批改问题
+
+---
+
 ## 第三次作业
 
 ![Week06](assets/Week06.png)
@@ -72,39 +80,182 @@
 
 ---
 
-### 相关问题
+### 作业批改问题
 
-#### 超算登录
+---
+
+## 第四次作业 - MD 大作业
+
+![Week07](assets/Week07.png)
+<!-- ![Week07-2023-12-12](https://cdn.jsdelivr.net/gh/Bit-Part-Young/BTY-imgs/lenovo-images/Week07-2023-12-12.png) -->
+
+---
+
+### 作业批改问题
+
+---
+
+## 第五次作业
+
+![Week09](assets/Week09.png)
+<!-- ![Week09-2023-12-12](https://cdn.jsdelivr.net/gh/Bit-Part-Young/BTY-imgs/lenovo-images/Week09-2023-12-12.png) -->
+
+---
+
+### 作业批改问题
+
+---
+
+## 第六次作业
+
+![Week10](assets/Week10.png)
+<!-- ![Week10-2023-12-12](https://cdn.jsdelivr.net/gh/Bit-Part-Young/BTY-imgs/lenovo-images/Week10-2023-12-12.png) -->
+
+绘制二维三角晶格的 Wigner-Seitz 原胞和第一布里渊区
+
+---
+
+### 作业批改问题
+
+- 绘制两个图
+- 晶格基矢应给出，其倒易点阵基矢应计算出
+- 晶格基矢与倒易点阵基矢之间的角度和大小比例应区表现出来
+
+
+---
+
+## 第七次作业 - DFT 大作业
+
+![Week12-1](assets/Week12-1.png)
+<!-- ![Week12-1-2023-12-12](https://cdn.jsdelivr.net/gh/Bit-Part-Young/BTY-imgs/lenovo-images/Week12-1-2023-12-12.png) -->
+
+![Week12-2](assets/Week12-2.png)
+<!-- ![Week12-2-2023-12-12](https://cdn.jsdelivr.net/gh/Bit-Part-Young/BTY-imgs/lenovo-images/Week12-2-2023-12-12.png) -->
+
+---
+
+### 作业批改问题
+
+- 这是一个实验报告，框架及内容需完整（实验目的、原理、方法、结果与分析及结论）
+- 收敛性测试最终的 k-mesh 和 encut 应给出，这是后续计算的基础
+- 需要采用不同的 ISMSEAR 值，只计算了一种 ISMSEAR 值的情况，计算内容不完整
+- 对于表面和空位模型，需要给出其计算的构型可视化图，不然不知道你算在算什么
+- 计算出来的表面能和空位形成能数据要知道其含义，不可能为负值（负值表示该构型更稳定），，且要与文献中的实验值、DFT、MD 计算值进行对比，明显不对的需要检查并重新计算，直至数值合理，不是仅仅得到一个数值就可以了
+- 没有找文献；建议最后所有的计算数据汇总成一个表格，结果及对比更明晰
+- 可以不用计算能带
+- 实验材料中的相关脚本内容不需要放到报告中
+
+
+
+---
+
+## 第八次作业
+
+![Week14](assets/Week14.png)
+<!-- ![Week14-2023-12-12](https://cdn.jsdelivr.net/gh/Bit-Part-Young/BTY-imgs/lenovo-images/Week14-2023-12-12.png) -->
+
+
+---
+
+### 作业批改问题
+
+---
+
+## 第九次作业
+
+![Week14](assets/Homework09.png)
+
+---
+
+### 作业批改问题
+
+---
+
+## 第十次作业
+
+![Week14](assets/Homework10.png)
+
+---
+
+### 作业批改问题
+
+---
+
+## 第十一次作业 - PF 大作业
+
+![Week14](assets/Homework11.png)
+
+---
+
+### 作业批改问题
+
+---
+
+## 问题汇总
+
+### 超算登录
 
 若登录出现 `Network error: Connection timed out` 或 `Connection refused`，有可能是之前多次密码输入错误导致临时被封，请过一段时间再尝试登录（**也有可能是思源一号处于临时维修状态导致的无法登录，可查看超算相关通知或询问身边的同学是否可以登录**）。若仍出现问题，请与助教联系。
 
 ---
 
-#### MobaXterm 使用
+### MobaXterm 使用
 
 部分同学笔记本安装的 MobaXterm 软件**左侧文件目录会无法随右侧终端命令实时改变**，建议使用 WinSCP 软件进行文件传输。
 
 ---
 
-#### 超算思源一号中使用 LAMMPS
+### WinSCP
 
-- **若没有得到结果，请先 `ll` 查看 `.err` 格式的文件大小是否为 0；若不为 0，则说明没有运行成功，出现报错；再查看 `.err` 或 `log.lammps` 文件里的具体内容来查找报错原因**。
+WinSCP 直接双击打开图片会出现如下错误，正确打开方式：**右键 - Open**。
+
+![winscp](assets/questions-imgs/winscp.png)
+<!-- ![winscp-2023-12-12](https://cdn.jsdelivr.net/gh/Bit-Part-Young/BTY-imgs/lenovo-images/winscp-2023-12-12.png) -->
+
+---
+
+### VSCode
+
+- VSCode 可以远程连接超算。
+- VSCode 的 Python 扩展在超算上使用时容易崩溃；建议在本地端编写 Python 脚本以获得最佳体验；或在设置中把 Python 插件中的 language server 选项 由 default 或 Pylance 改成 Jedi，崩溃情况会有所改善（但效果不如 Pylance）。
+
+---
+
+### atomsk
+
+在超算一号中，直接运行 `atomsk` 出现以下报错：
+
+```bash
+atomsk: error while loading shared libraries: libiomp5.so: cannot open shared object file: No such file or directory
+```
+
+原因：缺失动态链接库。编译 atomsk 过程中用到了 intel 相关库，在思源一号使用前需 `module load`。
+
+解决方法：执行以下命令
+
+```bash
+module load intel/19.0.5
+```
+
+---
+
+### OVITO
+
+OVITO 查看原子的位置信息：鼠标放到原子边上，窗口左下角会显示该原子的位置信息；构型图的下方有 `Particles` 选项，可以查看原子类型和原子的位置信息。
+
+---
+
+### LAMMPS 输出与报错
+
+- 在超算提交任务，会有 `*.err` 和 `*.out` 文件生成。`ll *.err` 查看文件大小是否为 0；若不为 0，则说明没有运行成功，出现报错；再查看 `.err` 或 `log.lammps` 文件里的具体内容来查找报错原因。
 
 - **LAMMPS 报错：LAMMPS 命令是一行一行执行的，哪行的命令有问题，它就会停在那，并给出错误信息，还是较容易看懂的；请先自己查看报错信息，并在 LAMMPS 官网上仔细阅读相应命令的手册，并尝试解决**；尝试多次后若无法解决，请将报错信息发给助教。
 
 ---
 
-#### VSCode
+### 表面模型构建
 
-- VSCode 可以远程连接超算。
-
-- VSCode 的 python 扩展在超算上使用时容易崩溃；建议在本地端编写 python 脚本以获得最佳体验；或在设置中把 python 插件中的 language server 选项 由 default 或 Pylance 改成 jedi，崩溃情况会有所改善。
-
----
-
-#### 表面模型构建
-
-- 直接运用 `lattice fcc` 模型构建的是 001 或 100 表面；其它晶面可以采用 atomsk 构建后，通过 `read_data` 方式来读取初始构型。具体可见 `2-MolecularDynamics/7-experiments/2-SurfaceEnergy` 相关算例。
+- LAMMPS 中直接运用 `lattice fcc` 模型构建的是 001 或 100 表面；其它晶面可以采用 atomsk 构建后，通过 `read_data` 方式来读取初始构型。具体可见 `2-MolecularDynamics/7-experiments/2-SurfaceEnergy` 相关算例。
 
 - 也可以使用 LAMMPS 内置命令，需要用到 `lattce` 命令的 `orient` 参数（**建议将 `x y z` 的参数值全部写上**）：[lattice command — LAMMPS documentation](https://docs.lammps.org/lattice.html)
 
@@ -118,7 +269,7 @@ lattice      fcc 4.089 origin 0.0 0.0 0.0 orient x ... y ... z ...
 
 ---
 
-#### 势函数
+### 势函数
 
 使用网络上的势函数（如 [NIST/MML Center for Theoretical and Computational Materials Science | NIST](https://www.ctcms.nist.gov/)），**请不要修改它的文件名及其后缀！！！其后缀是有特定含义的**，LAMMPS in 文件中的 `pair_style` 和 `pair_coeff` 参数也要进行相应的修改（这两个命令是相互绑定的），请阅读 [pair\_style command — LAMMPS documentation](https://docs.lammps.org/pair_style.html)。
 
@@ -145,13 +296,7 @@ pair_coeff * * Au-2009.eam.alloy Au
 
 ---
 
-#### OVITO
-
-OVITO 查看原子的位置信息：鼠标放到原子边上，窗口左下角会显示该原子的位置信息；构型图的下方有 `Particles` 选项，可以查看原子类型和原子的位置信息。
-
----
-
-#### 表面能、层间距检验
+### 表面能、层间距检验
 
 - **一般势函数文件的起始行会告诉其原始文献，文献一般会给出该势函数计算的一些基本性质，如平衡晶格常数，空位形成能、表面能等**。可以与其进行对比。
 
@@ -159,102 +304,7 @@ OVITO 查看原子的位置信息：鼠标放到原子边上，窗口左下角�
 
 - **对于 FCC 晶体，(111) 的表面能应最小**。
 
----
-
-## 第四次作业 - MD 大作业
-
-![Week07](assets/Week07.png)
-<!-- ![Week07-2023-12-12](https://cdn.jsdelivr.net/gh/Bit-Part-Young/BTY-imgs/lenovo-images/Week07-2023-12-12.png) -->
-
----
-
-### 相关问题
-
-#### atomsk
-
-直接运行 `atomsk` 出现以下报错：
-
-```bash
-atomsk: error while loading shared libraries: libiomp5.so: cannot open shared object file: No such file or directory
-```
-
-原因：缺失动态链接库。编译 atomsk 过程中用到了 intel 相关库，在思源一号使用前需 `module load`。
-
-解决方法：执行以下命令：
-
-```bash
-module load intel/19.0.5
-```
-
----
-
-#### 课程材料中的 tools
-
-若使 `eos_fit` 脚本在任意目录下直接运行（即 `eos_fit ev.dat 2 3`），请复制并执行以下命令：
-
-```bash
-cp ~/MSE6701H/MMMS/2-MolecularDynamics/0-tools/eos_fit ~/bin; source ~/.bashrc
-
-# or 创建软链接
-ln -s ~/MSE6701H/MMMS/2-MolecularDynamics/0-tools/eos_fit ~/bin; source ~/.bashrc
-```
-
->最新的课程材料的 tools 中的脚本（MD 和 DFT 部分）所在路径均已添加到 PATH 中，可不用运行上述命令。
-
----
-
-## 第五次作业
-
-![Week09](assets/Week09.png)
-<!-- ![Week09-2023-12-12](https://cdn.jsdelivr.net/gh/Bit-Part-Young/BTY-imgs/lenovo-images/Week09-2023-12-12.png) -->
-
----
-
-## 第六次作业
-
-![Week10](assets/Week10.png)
-<!-- ![Week10-2023-12-12](https://cdn.jsdelivr.net/gh/Bit-Part-Young/BTY-imgs/lenovo-images/Week10-2023-12-12.png) -->
-
-绘制二维三角晶格的 Wigner-Seitz 原胞和第一布里渊区
-
-
-问题：
-
-- 绘制两个图
-- 晶格基矢应给出，其倒易点阵基矢应计算出
-- 晶格基矢与倒易点阵基矢之间的角度和大小比例应区表现出来
-
-
-
-
----
-
-## 第七次作业 - DFT 大作业
-
-![Week12-1](assets/Week12-1.png)
-<!-- ![Week12-1-2023-12-12](https://cdn.jsdelivr.net/gh/Bit-Part-Young/BTY-imgs/lenovo-images/Week12-1-2023-12-12.png) -->
-
-![Week12-2](assets/Week12-2.png)
-<!-- ![Week12-2-2023-12-12](https://cdn.jsdelivr.net/gh/Bit-Part-Young/BTY-imgs/lenovo-images/Week12-2-2023-12-12.png) -->
-
-
-问题：
-
-- 这是一个实验报告，框架及内容需完整（实验目的、原理、方法、结果与分析及结论）
-- 收敛性测试最终的 k-mesh 和 encut 应给出，这是后续计算的基础
-- 需要采用不同的 ISMSEAR 值，只计算了一种 ISMSEAR 值的情况，计算内容不完整
-- 对于表面和空位模型，需要给出其计算的构型可视化图，不然不知道你算在算什么
-- 计算出来的表面能和空位形成能数据要知道其含义，不可能为负值（负值表示该构型更稳定），，且要与文献中的实验值、DFT、MD 计算值进行对比，明显不对的需要检查并重新计算，直至数值合理，不是仅仅得到一个数值就可以了
-- 没有找文献；建议最后所有的计算数据汇总成一个表格，结果及对比更明晰
-- 可以不用计算能带
-- 实验材料中的相关脚本内容不需要放到报告中
-
-
----
-
-### 相关问题
-
-#### VASP 控温
+### VASP 控温
 
 VASP 的控温目前还是针对整个计算体系，所以没办法设置温度梯度；可以 MD，但控温、控压不能够像 LAMMPS 那样可以针对部分原子来设置
 
@@ -262,7 +312,7 @@ VASP 的控温目前还是针对整个计算体系，所以没办法设置温度
 
 ---
 
-#### 能带结构相关
+### 能带结构相关
 
 - 对能带结构的观察，可以通过多种方式。一种是观察各能级对应的能量随第一布里渊区中一些高对称性点之间连线上 k 点的变化，称之为色散关系 dispersion relation；一种是观察不同能级下可能状态数量的分布，即态密度 electron density of states。费米能级之下的能级，称为价带，即价电子填充的能带；费米能级之上的，称为导带，有电子进入导带则可在势场驱动下迁移，即导电。
 
@@ -272,7 +322,7 @@ VASP 的控温目前还是针对整个计算体系，所以没办法设置温度
 
 ---
 
-#### POSCAR 文件错误
+### POSCAR 文件错误
 
 对构型中的部分原子进行固定处理时，POSCAR 文件的第 8 行（Selective Dynamics）和第 9 行（Direct 或 Cartesian）写反，导致出现以下错误：
 
@@ -340,34 +390,18 @@ RMM:  15    -0.249272312495E+02    0.64653E-04   -0.12583E-04  1440   0.116E-01 
 
 ---
 
-#### WinSCP
+<!--
 
-WinSCP 直接双击打开图片会出现如下错误，正确打开方式：**右键 - Open**。
+#### 课程材料中的 tools
 
-![winscp](assets/questions-imgs/winscp.png)
-<!-- ![winscp-2023-12-12](https://cdn.jsdelivr.net/gh/Bit-Part-Young/BTY-imgs/lenovo-images/winscp-2023-12-12.png) -->
+若使 `eos_fit` 脚本在任意目录下直接运行（即 `eos_fit ev.dat 2 3`），请复制并执行以下命令：
 
----
+```bash
+cp ~/MSE6701H/MMMS/2-MolecularDynamics/0-tools/eos_fit ~/bin; source ~/.bashrc
 
-## 第八次作业
+# or 创建软链接
 
-![Week14](assets/Week14.png)
-<!-- ![Week14-2023-12-12](https://cdn.jsdelivr.net/gh/Bit-Part-Young/BTY-imgs/lenovo-images/Week14-2023-12-12.png) -->
+ln -s ~/MSE6701H/MMMS/2-MolecularDynamics/0-tools/eos_fit ~/bin; source ~/.bashrc
+```
 
----
-
-## 第九次作业
-
-![Week14](assets/Homework09.png)
-
----
-
-## 第十次作业
-
-![Week14](assets/Homework10.png)
-
----
-
-## 第十一次作业 - PF 大作业
-
-![Week14](assets/Homework11.png)
+>最新的课程材料的 tools 中的脚本（MD 和 DFT 部分）所在路径均已添加到 PATH 中，可不用运行上述命令。 -->
